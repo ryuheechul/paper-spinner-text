@@ -1,19 +1,27 @@
 {
-    "name": "my-repo",
-    "version": "0.0.0",
-    "description": "My awesome Custom Element",
-    "license": "MIT",
-    "main": "dist/my-element.html",
-    "keywords": [
-        "polymer",
-        "web-components"
-    ],
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components"
-    ],
-    "dependencies": {
-        "polymer": "Polymer/polymer#^0.5.1"
-    }
+  "name": "paper-spinner-text",
+  "version": "0.1.0",
+  "authors": [
+    "Ryu Heechul <ryuhcii@gmail.com>"
+  ],
+  "description": "Polymer element paper-spinner with text.",
+  "main": "paper-spinner-text.html",
+  "keywords": [
+    "Polymer",
+    "paper-spinner",
+    "text",
+    "web-components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5.2",
+    "paper-spinner": "Polymer/paper-spinner#^0.5.2"
+  }
 }

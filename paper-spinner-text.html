@@ -1,0 +1,42 @@
+<link href="../polymer/polymer.html" rel="import">
+<link href="../paper-spinner/paper-spinner.html" rel="import">
+
+<polymer-element name="paper-spinner-text">
+  <template>
+    <style>
+      paper-spinner {
+        display:none;
+      }
+      :host([active]) paper-spinner {
+        display:inline-block;
+      }
+
+      :host([hideText][active]) #content, :host([hideText][active]) #space {
+        display:none;
+      }
+
+      paper-spinner::shadow .circle {
+        border-color: {{color}};
+      }
+    </style>
+
+    <div horizontal layout>
+      <span id="content" self-center>
+        <content></content>
+      </span>
+      <span id="space">&nbsp;</span>
+      <span id="spinner-container" self-center>
+        <paper-spinner id="spinner" active={{active}}></paper-spinner>
+      </span>
+    </div>
+  </template>
+  <script>
+    Polymer('paper-spinner-text', {
+      publish:{
+        active:false,
+        hideText:false,
+        color:null,
+      }
+    });
+  </script>
+</polymer-element>
