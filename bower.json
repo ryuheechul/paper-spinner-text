@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
+    "paper-button": "Polymer/paper-button#^0.5.2",
     "paper-spinner-text": "ryuheechul/paper-spinner-text#^0.1.0"
   }
 }
