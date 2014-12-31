@@ -33,9 +33,9 @@
   <script>
     Polymer('paper-spinner-text', {
       publish:{
-        active:false,
-        hideText:false,
-        color:null,
+        active: {value: false, reflect: true},
+        hideText: {value: false, reflect: true},
+        color: {value: false, reflect: true}
       }
     });
   </script>
