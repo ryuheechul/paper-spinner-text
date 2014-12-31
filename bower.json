@@ -1,0 +1,20 @@
+{
+  "name": "paper-spinner-text-gh-page",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ryuheechul/paper-spinner-text",
+  "authors": [
+    "Ryu Heechul <ryuhcii@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-spinner-text": "ryuheechul/paper-spinner-text#^0.1.0"
+  }
+}
