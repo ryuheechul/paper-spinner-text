@@ -1,4 +1,4 @@
-# &lt;my-repo&gt;
+# &lt;paper-spinner-text&gt;
 
 > A bare minimum custom element starter-kit using [Polymer](http://www.polymer-project.org/).
 >
@@ -8,17 +8,17 @@
 
 ## Demo
 
-[Check it live!](http://my-user.github.io/my-repo)
+[Check it live!](http://ryuheechul.github.io/paper-spinner-text)
 
 ## Install
 
 Install the component using [Bower](http://bower.io/):
 
 ```sh
-$ bower install my-repo --save
+$ bower install paper-spinner-text --save
 ```
 
-Or [download as ZIP](https://github.com/my-user/my-repo/archive/master.zip).
+Or [download as ZIP](https://github.com/ryuheechul/paper-spinner-text/archive/master.zip).
 
 ## Usage
 
@@ -31,66 +31,22 @@ Or [download as ZIP](https://github.com/my-user/my-repo/archive/master.zip).
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/my-repo/dist/my-element.html">
+    <link rel="import" href="bower_components/paper-spinner-text/paper-spinner-text.html">
     ```
 
 3. Start using it!
 
     ```html
-    <my-element></my-element>
+    <paper-spinner-text></paper-spinner-text>
     ```
 
 ## Options
 
 Attribute     | Options     | Default      | Description
 ---           | ---         | ---          | ---
-`foo`         | *string*    | `bar`        | Lorem ipsum dolor.
-
-## Methods
-
-Method        | Parameters   | Returns     | Description
----           | ---          | ---         | ---
-`unicorn()`   | None.        | Nothing.    | Magic stuff appears.
-
-## Events
-
-Event         | Description
----           | ---
-`onsomething` | Triggers when something happens.
-
-## Development
-
-In order to run it locally you'll need to fetch some dependencies and a basic server setup.
-
-* Install [Bower](http://bower.io/) & [Grunt](http://gruntjs.com/):
-
-    ```sh
-    $ [sudo] npm install -g bower grunt-cli
-    ```
-
-* Install local dependencies:
-
-    ```sh
-    $ bower install && npm install
-    ```
-
-* To test your project, start the development server and open `http://localhost:8000`.
-
-    ```sh
-    $ grunt server
-    ```
-
-* To build the distribution files before releasing a new version.
-
-    ```sh
-    $ grunt build
-    ```
-
-* To provide a live demo, send everything to `gh-pages` branch.
-
-    ```sh
-    $ grunt deploy
-    ```
+`active`      | *boolean*   | `false`      | activate spinner.
+`hideText`    | *boolean*   | `false`      | hide text when spinner is activate.
+`color`       | *string*    | `null`       | color for spinner.
 
 ## Contributing
 

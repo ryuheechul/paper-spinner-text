@@ -19,47 +19,108 @@
   <script src="../webcomponentsjs/webcomponents.js"></script>
 
   <link rel="import" href="paper-spinner-text.html">
+  <link rel="import" href="../paper-button/paper-button.html">
   <style>
     paper-button.colored {
       color: #4285f4;
+      margin: 0 1em 0 1em;
     }
 
     paper-button[raised].colored {
       background: #4285f4;
       color: #fff;
     }
+
+    div {
+      margin: 1em 0 1em 0;
+    }
   </style>
 </head>
-<body unresolved>
+<body>
+  <section>
+    <h2>standalone</h2>
+    <div>
+      inactive:
+      <paper-spinner-text hideText>
+        text
+      </paper-spinner-text>
+    </div>
 
-  <paper-button raised class="colored">
-    <paper-spinner-text hideText>
-      text
-    </paper-spinner-text>
-  </paper-button>
+    <div>
+      active:
+      <paper-spinner-text active>
+        text
+      </paper-spinner-text>
+    </div>
 
-  <paper-button raised class="colored">
-    <paper-spinner-text active hideText>
-      text
-    </paper-spinner-text>
-  </paper-button>
+    <div>
+      active hideText:
+      <paper-spinner-text active hideText>
+        text
+      </paper-spinner-text>
+    </div>
 
-  <paper-button raised class="colored">
-    <paper-spinner-text active color="yellow">
-      text
-    </paper-spinner-text>
-  </paper-button>
+    <div>
+      active color="yellow":
+      <paper-spinner-text active color="yellow">
+        text
+      </paper-spinner-text>
+    </div>
 
-  <paper-button raised class="colored">
-    <paper-spinner-text active color="red">
-      text
-    </paper-spinner-text>
-  </paper-button>
-  <paper-button raised class="colored">
-    <paper-spinner-text active hideText color="#ccc">
-      text
-    </paper-spinner-text>
-  </paper-button>
+    <div>
+      active hideText color="#ccc":
+      <paper-spinner-text active hideText color="#ccc">
+        text
+      </paper-spinner-text>
+    </div>
+  </section>
+  <section>
+    <h2>with button</h2>
+    <div>
+      inactive
+      <paper-button raised class="colored">
+        <paper-spinner-text hideText>
+          text
+        </paper-spinner-text>
+      </paper-button>
+    </div>
+
+    <div>
+      active
+      <paper-button raised class="colored">
+        <paper-spinner-text active>
+          text
+        </paper-spinner-text>
+      </paper-button>
+    </div>
+
+    <div>
+      active hideText
+      <paper-button raised class="colored">
+        <paper-spinner-text active hideText>
+          text
+        </paper-spinner-text>
+      </paper-button>
+    </div>
+
+    <div>
+      active color="yellow"
+      <paper-button raised class="colored">
+        <paper-spinner-text active color="yellow">
+          text
+        </paper-spinner-text>
+      </paper-button>
+    </div>
+
+    <div>
+      active hideText color="#ccc"
+      <paper-button raised class="colored">
+        <paper-spinner-text active hideText color="#ccc">
+          text
+        </paper-spinner-text>
+      </paper-button>
+    </div>
+  </section>
 
 </body>
 </html>
